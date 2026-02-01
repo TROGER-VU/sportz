@@ -18,7 +18,7 @@ function unsubscribe(matchId, socket) {
 
     subscribers.delete(socket);
     
-    if(subscribers.size() === 0) {
+    if(subscribers.size === 0) {
         matchSubscribers.delete(matchId);
     }
 }
